@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de empleados</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <form id="form1">
+            <div class="mb-3">
+            <label for="idNombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="idNombre"
+                placeholder="Nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="idApellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="idApellido"
+                placeholder="Apellido" required>
+        </div>
+        <div class="mb-3">
+            <label for="idEdad" class="form-label">Edad</label>
+            <input type="number" class="form-control" id="idEdad"
+                placeholder="18" required>
+        </div>
+
+        <label>Sexo</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" id="sexo1" value="M" checked>
+            <label class="form-check-label" for="idEdo_civil1">
+              Masculino
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" id="sexo2" value="F">
+            <label class="form-check-label" for="idEdo_civil2">
+              Femenino
+            </label>
+          </div>
+        
+        <label>Estado civil</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="estado_civil" id="idEdo_civil1" value="Soltero" checked>
+            <label class="form-check-label" for="idEdo_civil1">
+                Soltero/a
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="estado_civil" id="idEdo_civil2" value="Casado">
+            <label class="form-check-label" for="idEdo_civil2">
+              Casado/a
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="estado_civil" id="idEdo_civil3" value="Viudo">
+            <label class="form-check-label" for="idEdo_civil3">
+              Viudo/a
+            </label>
+          </div>
+
+        <div class="form-floating">
+            <select class="form-select" id="sueldo" aria-label="Floating label select example">
+              <option selected value="1000">Menor que 1000</option>
+              <option value="1750">Entre 1000 y 2500</option>
+              <option value="2500">Mayor que 2500</option>
+            </select>
+            <label for="sueldo">Presione acá para seleccionar un sueldo distinto</label>
+          </div>
+          
+          <div class="mb-3">
+              <button type="button" class="btn btn-primary" onclick="return insertar()">Subir datos del empleado</button>
+              <button type="reset" class="btn btn-secondary">Limpiar formulario</button>
+        </div>
+    </form>
+    <div id="resp"></div>
+</div>
+
+<container id="resumen">
+    <h4>
+        <div id="res1"></div>
+    </h4>
+    <h4>
+        <div id="res2"></div>
+    </h4>
+    <h4>
+        <div id="res3"></div>
+    </h4>
+    <h4>
+        <div id="res4"></div>
+    </h4>
+</container>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
