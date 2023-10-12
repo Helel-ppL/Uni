@@ -1,0 +1,99 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color:rgb(98, 98, 98);
+    height: 100%;
+}
+header{
+    background-color: rgb(54, 67, 166);
+    color:rgb(255, 251, 176);
+    text-align: center;
+    border: 2px outset black;
+    border-radius: 15px;
+    margin-bottom: 0.2em;
+    padding: 0.5em;
+}
+#title_header{
+    margin-left:0.2em;
+    margin-right:0.2em;
+}
+
+#title{
+    font-size: 3em;  
+}
+
+textarea{
+    width: 100%;
+    height: 80%;
+}
+
+table{
+    background-color: rgb(36, 72, 100);
+    width: 100%;
+    color:rgb(233, 180, 106);
+}
+th{
+    background-color:rgb(0, 61, 147);
+}
+td{
+    color:rgb(255, 244, 184);
+    width: auto;
+    text-align: center;
+    background-color: rgba(65, 68, 138, 0.502);
+    word-wrap: break-word;
+}
+td>:visited{
+    color:violet;
+}
+#td_nombre>:hover{
+    color:rgb(244, 255, 126);
+}
+td>:link{
+    color:rgb(95, 228, 148);
+}
+#td_nombre{
+    max-width: 10em;
+}
+.container{
+    height: 100%;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+}
+.bar{
+    float:none;
+}
+#folder_container{
+    float:left;
+    /* background-color:rgb(159, 72, 193); */
+    width: 40%;
+    height: 100%;
+}
+
+#editor_container{
+    width: 60%;
+    float:right;
+    height: 100%;
+}
+
+#file_icon{
+    width: 2em;
+    align-self: center;
+}
+
+
+/* Mensajes de estatus */
+
+.successful{
+    width: 100%;
+    background-color: green;
+}
+
+.error{
+    width: 100%;
+    background-color: darkred;
+}
